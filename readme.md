@@ -8,10 +8,9 @@
 > - 팀원 소개
 > - 서비스 소개
 > - 주요 기능
-> - 링크 모음
 > - ERD
 > - API 모아보기
-> - 파일 구조
+
 > - 시작 가이드
 > - 기술 스택
 > - BE 개발 주안점
@@ -100,171 +99,6 @@
 | 축제 정보 | 축제 정보 출력 | /ajax/location | GET |
 | 관리자 | 관리자 로그인 확인 | /ajax/adminCheck | POST |
 
-### 파일구조
-
----
-
-```jsx
-├─src
-│  ├─main
-│  │  ├─java
-│  │  │  └─com
-│  │  │      └─TravelMaker
-│  │  │          ├─component
-│  │  │          ├─config
-│  │  │          ├─controller
-│  │  │          │  ├─admin
-│  │  │          │  ├─lodge
-│  │  │          │  ├─meeting
-│  │  │          │  ├─member
-│  │  │          │  ├─promotion
-│  │  │          │  └─RecommendTravel
-│  │  │          ├─Handler
-│  │  │          ├─interceptor
-│  │  │          ├─model
-│  │  │          ├─repository
-│  │  │          │  ├─admin
-│  │  │          │  ├─lodge
-│  │  │          │  ├─meeting
-│  │  │          │  ├─member
-│  │  │          │  ├─promotion
-│  │  │          │  └─recommendTravel
-│  │  │          └─service
-│  │  │              ├─admin
-│  │  │              ├─APIInteface
-│  │  │              ├─lodge
-│  │  │              ├─meeting
-│  │  │              ├─member
-│  │  │              ├─promotion
-│  │  │              └─recommendTravel
-│  │  ├─resources
-│  │  │  ├─css
-│  │  │  │  └─main_css
-│  │  │  ├─img
-│  │  │  │  └─UserImg
-│  │  │  ├─js
-│  │  │  │  ├─lodge
-│  │  │  │  ├─member
-│  │  │  │  ├─promotion
-│  │  │  │  └─recommendTravel
-│  │  │  ├─META-INF
-│  │  │  └─mybatis
-│  │  └─webapp
-│  │      ├─resources
-│  │      └─WEB-INF
-│  │          ├─classes
-│  │          ├─spring
-│  │          │  └─appServlet
-│  │          └─views
-│  │              ├─Admin
-│  │              ├─Lodge
-│  │              ├─Meeting
-│  │              ├─Member
-│  │              ├─Promotion
-│  │              └─recommend_travel
-│  └─test
-│      ├─java
-│      │  └─com
-│      │      └─TravelMaker
-│      │          └─www
-│      └─resources
-└─target
-    ├─classes
-    │  ├─com
-    │  │  └─TravelMaker
-    │  │      ├─component
-    │  │      ├─config
-    │  │      ├─controller
-    │  │      │  ├─admin
-    │  │      │  ├─lodge
-    │  │      │  ├─meeting
-    │  │      │  ├─member
-    │  │      │  ├─promotion
-    │  │      │  └─RecommendTravel
-    │  │      ├─Handler
-    │  │      ├─interceptor
-    │  │      ├─model
-    │  │      ├─repository
-    │  │      │  ├─admin
-    │  │      │  ├─lodge
-    │  │      │  ├─meeting
-    │  │      │  ├─member
-    │  │      │  ├─promotion
-    │  │      │  └─recommendTravel
-    │  │      └─service
-    │  │          ├─admin
-    │  │          ├─APIInteface
-    │  │          ├─lodge
-    │  │          ├─meeting
-    │  │          ├─member
-    │  │          ├─promotion
-    │  │          └─recommendTravel
-    │  ├─css
-    │  │  └─main_css
-    │  ├─img
-    │  └─mybatis
-    ├─generated-sources
-    │  └─annotations
-    ├─generated-test-sources
-    │  └─test-annotations
-    ├─m2e-wtp
-    │  └─web-resources
-    │      └─META-INF
-    │          └─maven
-    │              └─com.TravelMaker
-    │                  └─www
-    ├─test-classes
-    │  └─com
-    │      └─TravelMaker
-    │          └─www
-    └─www-1.0.0-BUILD-SNAPSHOT
-        ├─META-INF
-        └─WEB-INF
-            ├─classes
-            │  ├─com
-            │  │  └─TravelMaker
-            │  │      ├─component
-            │  │      ├─config
-            │  │      ├─controller
-            │  │      │  ├─admin
-            │  │      │  ├─lodge
-            │  │      │  ├─meeting
-            │  │      │  ├─member
-            │  │      │  ├─promotion
-            │  │      │  └─RecommendTravel
-            │  │      ├─Handler
-            │  │      ├─interceptor
-            │  │      ├─model
-            │  │      ├─repository
-            │  │      │  ├─admin
-            │  │      │  ├─lodge
-            │  │      │  ├─meeting
-            │  │      │  ├─member
-            │  │      │  ├─promotion
-            │  │      │  └─recommendTravel
-            │  │      └─service
-            │  │          ├─admin
-            │  │          ├─APIInteface
-            │  │          ├─lodge
-            │  │          ├─meeting
-            │  │          ├─member
-            │  │          ├─promotion
-            │  │          └─recommendTravel
-            │  ├─css
-            │  │  └─main_css
-            │  ├─img
-            │  └─mybatis
-            ├─lib
-            ├─spring
-            │  └─appServlet
-            └─views
-                ├─Admin
-                ├─Lodge
-                ├─Meeting
-                ├─Member
-                ├─Promotion
-                └─recommend_travel
-```
 
 ### 기술 스택
 
@@ -272,7 +106,6 @@
 
 ![Untitled 2](https://github.com/Sunro1994/TotalRepository/assets/132982907/ab81272b-99ab-40b7-98bc-8c5838d4e651)
 
-## 개발 주안점
 
 ---
 
